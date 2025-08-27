@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1755810305471,
+  "lastUpdate": 1756285622642,
   "repoUrl": "https://github.com/nsclass/yew",
   "entries": {
     "Yew master branch benchmarks (Lower is better)": [
@@ -3455,6 +3455,198 @@ window.BENCHMARK_DATA = {
           {
             "name": "yew-v0.21.0-keyed 43_first-paint",
             "value": 390.7,
+            "unit": ""
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Cecile Tonglet",
+            "username": "cecton",
+            "email": "cecile.tonglet@cecton.com"
+          },
+          "committer": {
+            "name": "GitHub",
+            "username": "web-flow",
+            "email": "noreply@github.com"
+          },
+          "id": "b00721954a117070fb728803966ae0f51f8617f0",
+          "message": "Better ImplicitClone ergnomics (#3508)\n\n* Use cheap-to-clone types more\n\n* Use IArray in NodeSeq & add IntoPropValue for &AttrValue\n\n* Add function get_mut() on VChild to make things easier\n\n* Use AttrValue in timer_functional example\n\n* fix VList PartialEq\n\n* extract implicit-clone as workspace dep and bump to 0.5.1\n\n* docs: advocate using IArray and IMap instead of Vec and HashMap\n\n* docs: AI translation for lifecycles.mdx in Japanese and simplified Chinese\n---------\n\nCo-authored-by: Mattuwu <syan4@ualberta.ca>",
+          "timestamp": "2025-08-27T06:21:50Z",
+          "url": "https://github.com/nsclass/yew/commit/b00721954a117070fb728803966ae0f51f8617f0"
+        },
+        "date": 1756285621770,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "yew-hooks-v0.21.0-keyed 01_run1k",
+            "value": 194.5,
+            "unit": ""
+          },
+          {
+            "name": "yew-hooks-v0.21.0-keyed 02_replace1k",
+            "value": 215.8,
+            "unit": ""
+          },
+          {
+            "name": "yew-hooks-v0.21.0-keyed 03_update10th1k_x16",
+            "value": 118.9,
+            "unit": ""
+          },
+          {
+            "name": "yew-hooks-v0.21.0-keyed 04_select1k",
+            "value": 58.6,
+            "unit": ""
+          },
+          {
+            "name": "yew-hooks-v0.21.0-keyed 05_swap1k",
+            "value": 135.2,
+            "unit": ""
+          },
+          {
+            "name": "yew-hooks-v0.21.0-keyed 06_remove-one-1k",
+            "value": 86,
+            "unit": ""
+          },
+          {
+            "name": "yew-hooks-v0.21.0-keyed 07_create10k",
+            "value": 2260.3,
+            "unit": ""
+          },
+          {
+            "name": "yew-hooks-v0.21.0-keyed 08_create1k-after1k_x2",
+            "value": 220.3,
+            "unit": ""
+          },
+          {
+            "name": "yew-hooks-v0.21.0-keyed 09_clear1k_x8",
+            "value": 109.7,
+            "unit": ""
+          },
+          {
+            "name": "yew-hooks-v0.21.0-keyed 21_ready-memory",
+            "value": 2.23358154296875,
+            "unit": ""
+          },
+          {
+            "name": "yew-hooks-v0.21.0-keyed 22_run-memory",
+            "value": 6.71018123626709,
+            "unit": ""
+          },
+          {
+            "name": "yew-hooks-v0.21.0-keyed 23_update5-memory",
+            "value": 6.996359825134277,
+            "unit": ""
+          },
+          {
+            "name": "yew-hooks-v0.21.0-keyed 25_run-clear-memory",
+            "value": 5.075380325317383,
+            "unit": ""
+          },
+          {
+            "name": "yew-hooks-v0.21.0-keyed 26_run-10k-memory",
+            "value": 45.052523612976074,
+            "unit": ""
+          },
+          {
+            "name": "yew-hooks-v0.21.0-keyed 41_size-uncompressed",
+            "value": 163.2,
+            "unit": ""
+          },
+          {
+            "name": "yew-hooks-v0.21.0-keyed 42_size-compressed",
+            "value": 54.3,
+            "unit": ""
+          },
+          {
+            "name": "yew-hooks-v0.21.0-keyed 43_first-paint",
+            "value": 424.7,
+            "unit": ""
+          },
+          {
+            "name": "yew-v0.21.0-keyed 01_run1k",
+            "value": 189.4,
+            "unit": ""
+          },
+          {
+            "name": "yew-v0.21.0-keyed 02_replace1k",
+            "value": 215.5,
+            "unit": ""
+          },
+          {
+            "name": "yew-v0.21.0-keyed 03_update10th1k_x16",
+            "value": 93,
+            "unit": ""
+          },
+          {
+            "name": "yew-v0.21.0-keyed 04_select1k",
+            "value": 33.3,
+            "unit": ""
+          },
+          {
+            "name": "yew-v0.21.0-keyed 05_swap1k",
+            "value": 107.6,
+            "unit": ""
+          },
+          {
+            "name": "yew-v0.21.0-keyed 06_remove-one-1k",
+            "value": 75.2,
+            "unit": ""
+          },
+          {
+            "name": "yew-v0.21.0-keyed 07_create10k",
+            "value": 2223.9,
+            "unit": ""
+          },
+          {
+            "name": "yew-v0.21.0-keyed 08_create1k-after1k_x2",
+            "value": 216.9,
+            "unit": ""
+          },
+          {
+            "name": "yew-v0.21.0-keyed 09_clear1k_x8",
+            "value": 107.3,
+            "unit": ""
+          },
+          {
+            "name": "yew-v0.21.0-keyed 21_ready-memory",
+            "value": 2.232755661010742,
+            "unit": ""
+          },
+          {
+            "name": "yew-v0.21.0-keyed 22_run-memory",
+            "value": 6.557007789611816,
+            "unit": ""
+          },
+          {
+            "name": "yew-v0.21.0-keyed 23_update5-memory",
+            "value": 6.766541481018066,
+            "unit": ""
+          },
+          {
+            "name": "yew-v0.21.0-keyed 25_run-clear-memory",
+            "value": 5.373432159423828,
+            "unit": ""
+          },
+          {
+            "name": "yew-v0.21.0-keyed 26_run-10k-memory",
+            "value": 43.86438846588135,
+            "unit": ""
+          },
+          {
+            "name": "yew-v0.21.0-keyed 41_size-uncompressed",
+            "value": 160.8,
+            "unit": ""
+          },
+          {
+            "name": "yew-v0.21.0-keyed 42_size-compressed",
+            "value": 53.8,
+            "unit": ""
+          },
+          {
+            "name": "yew-v0.21.0-keyed 43_first-paint",
+            "value": 407.5,
             "unit": ""
           }
         ]
