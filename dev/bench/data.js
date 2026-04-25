@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1777064444960,
+  "lastUpdate": 1777129264110,
   "repoUrl": "https://github.com/nsclass/yew",
   "entries": {
     "Yew master branch benchmarks (Lower is better)": [
@@ -14319,6 +14319,178 @@ window.BENCHMARK_DATA = {
           {
             "name": "yew-v0.23.0-keyed 43_first-paint",
             "value": 425.4,
+            "unit": ""
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Siyuan Yan",
+            "username": "Madoshakalaka",
+            "email": "44753941+Madoshakalaka@users.noreply.github.com"
+          },
+          "committer": {
+            "name": "GitHub",
+            "username": "web-flow",
+            "email": "noreply@github.com"
+          },
+          "id": "d4e5e9f3a82e81e97041f53e0cc7e6bb1796cd48",
+          "message": "feat: while, break/continue/return, and preamble statements in html! (#4124)\n\nalso note:\n\nOur MSRV is 1.85+ but users might stay on edition 2021 for various\nreasons\n\nThis change wraps break/continue in Into::into(...) triggered the never-type\nfallback in editions before 2024, where unconstrained ! falls back to\n(), producing \"(): Into<VNode> is not satisfied\" on edition 2021 users.\nEmit the keyword directly as a statement instead so the generated code\nis edition-agnostic.",
+          "timestamp": "2026-04-25T12:23:14Z",
+          "url": "https://github.com/nsclass/yew/commit/d4e5e9f3a82e81e97041f53e0cc7e6bb1796cd48"
+        },
+        "date": 1777129262657,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "yew-hooks-v0.23.0-keyed 01_run1k",
+            "value": 94.3,
+            "unit": ""
+          },
+          {
+            "name": "yew-hooks-v0.23.0-keyed 02_replace1k",
+            "value": 109.3,
+            "unit": ""
+          },
+          {
+            "name": "yew-hooks-v0.23.0-keyed 03_update10th1k_x16",
+            "value": 64.7,
+            "unit": ""
+          },
+          {
+            "name": "yew-hooks-v0.23.0-keyed 04_select1k",
+            "value": 37.1,
+            "unit": ""
+          },
+          {
+            "name": "yew-hooks-v0.23.0-keyed 05_swap1k",
+            "value": 71.3,
+            "unit": ""
+          },
+          {
+            "name": "yew-hooks-v0.23.0-keyed 06_remove-one-1k",
+            "value": 46.6,
+            "unit": ""
+          },
+          {
+            "name": "yew-hooks-v0.23.0-keyed 07_create10k",
+            "value": 1049.3,
+            "unit": ""
+          },
+          {
+            "name": "yew-hooks-v0.23.0-keyed 08_create1k-after1k_x2",
+            "value": 104.7,
+            "unit": ""
+          },
+          {
+            "name": "yew-hooks-v0.23.0-keyed 09_clear1k_x8",
+            "value": 47,
+            "unit": ""
+          },
+          {
+            "name": "yew-hooks-v0.23.0-keyed 21_ready-memory",
+            "value": 2.28861141204834,
+            "unit": ""
+          },
+          {
+            "name": "yew-hooks-v0.23.0-keyed 22_run-memory",
+            "value": 2.671219825744629,
+            "unit": ""
+          },
+          {
+            "name": "yew-hooks-v0.23.0-keyed 25_run-clear-memory",
+            "value": 5.221783638000488,
+            "unit": ""
+          },
+          {
+            "name": "yew-hooks-v0.23.0-keyed 41_size-uncompressed",
+            "value": 172.3,
+            "unit": ""
+          },
+          {
+            "name": "yew-hooks-v0.23.0-keyed 42_size-compressed",
+            "value": 56.2,
+            "unit": ""
+          },
+          {
+            "name": "yew-hooks-v0.23.0-keyed 43_first-paint",
+            "value": 396.3,
+            "unit": ""
+          },
+          {
+            "name": "yew-v0.23.0-keyed 01_run1k",
+            "value": 94.2,
+            "unit": ""
+          },
+          {
+            "name": "yew-v0.23.0-keyed 02_replace1k",
+            "value": 109.9,
+            "unit": ""
+          },
+          {
+            "name": "yew-v0.23.0-keyed 03_update10th1k_x16",
+            "value": 43.3,
+            "unit": ""
+          },
+          {
+            "name": "yew-v0.23.0-keyed 04_select1k",
+            "value": 14.1,
+            "unit": ""
+          },
+          {
+            "name": "yew-v0.23.0-keyed 05_swap1k",
+            "value": 48.5,
+            "unit": ""
+          },
+          {
+            "name": "yew-v0.23.0-keyed 06_remove-one-1k",
+            "value": 34.8,
+            "unit": ""
+          },
+          {
+            "name": "yew-v0.23.0-keyed 07_create10k",
+            "value": 1031.9,
+            "unit": ""
+          },
+          {
+            "name": "yew-v0.23.0-keyed 08_create1k-after1k_x2",
+            "value": 105.1,
+            "unit": ""
+          },
+          {
+            "name": "yew-v0.23.0-keyed 09_clear1k_x8",
+            "value": 44.2,
+            "unit": ""
+          },
+          {
+            "name": "yew-v0.23.0-keyed 21_ready-memory",
+            "value": 2.29672908782959,
+            "unit": ""
+          },
+          {
+            "name": "yew-v0.23.0-keyed 22_run-memory",
+            "value": 6.317988395690918,
+            "unit": ""
+          },
+          {
+            "name": "yew-v0.23.0-keyed 25_run-clear-memory",
+            "value": 5.127328872680664,
+            "unit": ""
+          },
+          {
+            "name": "yew-v0.23.0-keyed 41_size-uncompressed",
+            "value": 168.9,
+            "unit": ""
+          },
+          {
+            "name": "yew-v0.23.0-keyed 42_size-compressed",
+            "value": 55.5,
+            "unit": ""
+          },
+          {
+            "name": "yew-v0.23.0-keyed 43_first-paint",
+            "value": 392.2,
             "unit": ""
           }
         ]
